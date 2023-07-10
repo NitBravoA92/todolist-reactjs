@@ -1,9 +1,9 @@
 const TodosList = () => (
-  <section id="todo-list">
+  <div id="todo-list">
     <ul id="list-items-container">
     
     </ul>
-  </section>
+  </div>
 );
 
 export default TodosList;

@@ -10,7 +10,7 @@ const InputTodo = () => {
         <input type="text" placeholder="Add todo..." id="inputDescription" />
         <button type="submit" id="submit-new-task">+</button>
       </div>
-  </form>
+    </form>
   );
 }
 

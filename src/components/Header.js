@@ -4,3 +4,5 @@ const Header = ({ title, subtitle }) => (
     <h2>{ subtitle }</h2>
   </section>
 )
+
+export default Header;

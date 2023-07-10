@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+function TodoApp() {
   return (
     <div className="App">
 
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoApp;

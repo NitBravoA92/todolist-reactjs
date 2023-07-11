@@ -1,16 +1,16 @@
 import { AiFillEdit } from "react-icons/ai";
 import { FaTrash } from "react-icons/fa6";
 
-const TodoItem = ({ id, title, isCompleted, updateTaskStatus, deleteTask }) => {
+const TodoItem = ({ todoTask, updateTaskStatus, deleteTask }) => {
   return (
-    <li className="todo-item" id={id}>
-      <input type="checkbox" className="taskStatus" checked={isCompleted} onChange={(e) => updateTaskStatus(parseInt(e.target.parentElement.id))} />
-      <h3 className="taskTitle">{title}</h3>
+    <li className="todo-item">
+      <input type="checkbox" className="taskStatus" checked={todoTask?.completed} onChange={(e) => updateTaskStatus(todoTask?.id) } />
+      <h3 className="taskTitle">{todoTask?.title}</h3>
       <div className="actionButtons">
         <button type="button" className="updateTask">
           <AiFillEdit />
         </button>
-        <button type="button" className="deleteTask" onClick={(e) => deleteTask(parseInt(e.target.parentElement.parentElement.id))}>
+        <button type="button" className="deleteTask" onClick={(e) => deleteTask(todoTask?.id)}>
           <FaTrash />
         </button>
       </div>

@@ -1,9 +1,9 @@
 import TodoItem from './TodoItem';
 
-const TodosList = ({ tasklist, deleteTask }) => (
+const TodosList = ({ tasklist, updateTaskStatus, deleteTask }) => (
   <ul id="todos-items-container">
   {
-    tasklist.map((item, i) => <TodoItem key={i} deleteTask={deleteTask} id={item?.id} title={item?.title} />)
+    tasklist.map((task, i) => <TodoItem key={i} updateTaskStatus={updateTaskStatus} deleteTask={deleteTask} id={task?.id} title={task?.title} isCompleted={task?.completed} />)
   }
   </ul>
 );

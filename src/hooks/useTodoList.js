@@ -29,11 +29,11 @@ const useTodoList = (initialValue) => {
     setTodolist(getFromLocalStorage());
   }
 
-  const updateTaskTitle = (id, title) => {
+  const updateTaskStatus = (id) => {
     const tasksList = [...todolist];
     tasksList.forEach((task, i) => {
       if(task.id === id) {
-        tasksList[i].title = title
+        tasksList[i].completed = !tasksList[i].completed
       }
     });
     setLocalStorage(tasksList);
@@ -49,6 +49,7 @@ const useTodoList = (initialValue) => {
   return [
     todolist,
     saveTask,
+    updateTaskStatus,
     deleteTask
   ]
 }

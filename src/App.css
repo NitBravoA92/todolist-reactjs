@@ -1,38 +1,103 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #b3b1b1;
+  padding: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#header,
+#todos-logic {
+  padding: 1rem 0;
+}
+
+#header h1 {
+  font-size: 6rem;
+}
+
+#header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#header h1,
+#header h2 {
+  color: #9d9d9d;
+}
+
+#container-input-todo {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#container-input-todo {
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+#container-input-todo input {
+  width: 93%;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.15rem;
+}
+
+#container-input-todo button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.4rem 0.6rem;
+  margin-right: 0.8rem;
+  font-size: 1rem;
+  color: #807f7f;
+  display: flex;
+  align-items: flex-end;
+}
+
+#todos-items-container {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #dedcdc;
+  padding: 0.3rem 0.8rem;
+}
+
+.todo-item .taskTitle {
+  width: 75%;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 0.7rem 0;
+  color: #616060;
+}
+
+.updateTask,
+.deleteTask {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: #807f7f;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 65%;
   }
 }

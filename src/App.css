@@ -7,6 +7,10 @@
   padding: 1.5rem;
 }
 
+svg {
+  pointer-events: none;
+}
+
 ul {
   list-style: none;
 }

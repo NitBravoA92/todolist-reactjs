@@ -64,7 +64,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder-name
-  git clone 
+  git clone git@github.com:NitBravoA92/todolist-reactjs.git
 ```
 
 ### Prerequisites

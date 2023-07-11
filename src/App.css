@@ -102,6 +102,18 @@ ul {
 
 @media (min-width: 768px) {
   .App {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .App {
     width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    width: 50%;
   }
 }

@@ -30,13 +30,16 @@ const useTodoList = (initialValue) => {
   }
 
   const updateTaskStatus = (id) => {
-    const tasksList = [...todolist];
-    tasksList.forEach((task, i) => {
+    const newTodoList = todolist.map((task, i) => {
       if(task.id === id) {
-        tasksList[i].completed = !tasksList[i].completed
+        return {
+          ...task,
+          completed: !task.completed
+        };
       }
+      return task;
     });
-    setLocalStorage(tasksList);
+    setLocalStorage(newTodoList);
     setTodolist(getFromLocalStorage());
   }
 

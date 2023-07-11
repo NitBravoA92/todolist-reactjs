@@ -46,9 +46,7 @@ const useTodoList = (initialValue) => {
   const deleteTask = (id) => {
     const tasksList = todolist
       .filter((task) => task.id !== id)
-      .map((task, i) => {
-        return { ...task, id: (i + 1) };
-      });
+      .map((task, i) => ({ ...task, id: (i + 1) }));
     setLocalStorage(tasksList);
     setTodolist(getFromLocalStorage());
   };

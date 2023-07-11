@@ -1,25 +1,131 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+<div align="center">
+  <br/>
+  <h2><b>ToDoList App - ReactJS</b></h2>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
 
-## Available Scripts
+- [📗 Table of Contents](#-table-of-contents)
+- [ToDoList App - ReactJS](#todolist-app---reactjs)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Build](#build)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
+
+# ToDoList App - ReactJS<a name="about-project"></a>
+
+**ToDoList App** This project consists of building a ToDoList App using the ReactJS library, to show a list of Tasks and allow users to add, delete and update the status of each task.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://es.react.dev">ReactJS</a></li>
+    <li><a href="https://nodejs.org">Node.js</a></li>
+    <li><a href="https://create-react-app.dev">Create React App</a></li>
+    <li><a href="https://stylelint.io/">Stylelint.io</a></li>
+    <li><a href="https://eslint.org/">ESlint.org</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **Using the ReactJS library**
+- **Using JSX syntax**
+- **Use of semantic HTML**
+- **SPA Approach**
+- **Responsive design**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder-name
+  git clone 
+```
+
+### Prerequisites
+
+In order to install, modify and run this project, it is necessary to have the following applications installed:
+
+- **Git:** to manage the project versions of source code. [You can Download Git here](https://git-scm.com/)
+
+- **Nodejs and NPM:** to install and manage the project dependencies. [Nodejs and NPM installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+- **A code editor** like Visual Studio Code (Recommended) or any other of your preference. It is necessary to open the project and add or modify the source code. [You can Download Visual Studio Code here](https://code.visualstudio.com/)
+
+It is also important to have at least basic knowledge about ReactJS, JSX, HTML, CSS and Javascript languages so you will be able to understand and work with the code of the project. 
+- [Learn the basics of HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Learn the basics of CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+- [Javascript Arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Javascript Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+- [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [ReactJS](https://react.dev/learn)
+- [JSX](https://react.dev/learn/writing-markup-with-jsx)
+- [Create React App](https://github.com/facebook/create-react-app)
+
+
+### Install
+
+Install this project by running the next command into your project folder:
+
+```sh
+  npm install
+```
+
+All the packages and libraries necessary for the project to work will be installed in a folder called /node_module. After this installation, the project will be ready to use.
+
+### Usage
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You may also see any CSS and JS linters errors in the console running the following commands:
 
-### `npm run build`
+CSS Linter
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+
+Javascript Linter
+```sh
+  npx eslint "**/*.{js,jsx}"
+```
+
+### Build
+
+- `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,42 +135,47 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 👥 Authors <a name="authors"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 **Nitcelis Bravo**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- GitHub: [Nitcelis Bravo](https://github.com/NitBravoA92)
+- Twitter: [@softwareDevOne](https://twitter.com/softwareDevOne)
+- LinkedIn: [Nitcelis Bravo Alcalá](https://www.linkedin.com/in/nitcelis-bravo-alcala-b65340158)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
+## 🔭 Future Features <a name="future-features"></a>
+- [x] **Update the UI of the ToDoList App**
+- [ ] **Create the functionality to update a task title**
+- [ ] **Add a button to remove all the completed tasks**
+- [ ] **Add transitions and animations to the app**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing <a name="contributing"></a>
 
-### Code Splitting
+Contributions, issues, suggestions and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To do Contributions, please fork this repository, create a new branch and then create a Pull Request from your branch. You can find detailed description of this process in: [A Step by Step Guide to Making Your First GitHub Contribution by Brandon Morelli](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940)
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⭐️ Show your support <a name="support"></a>
 
-### Making a Progressive Web App
+If you liked this project, give me a "Star" (clicking the star button at the beginning of this page), share this repo with your developer community or make your contributions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I would like to thank my Microverse teammates for their support. They have supported me a lot in carrying out this project, giving me suggestions, good advice and solving my code doubts.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License <a name="license"></a>
 
-### `npm run build` fails to minify
+This project is [MIT](./LICENSE) licensed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

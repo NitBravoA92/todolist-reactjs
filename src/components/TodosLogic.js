@@ -4,12 +4,12 @@ import TodosList from './TodosList';
 
 const TodosLogic = () => {
 
-  const [todolist, saveTask] = useTodoList([]);
+  const [todolist, saveTask, deleteTask] = useTodoList([]);
 
   return (
     <section id="todos-logic">
       <InputTodo addTaskToState={saveTask} />
-      <TodosList tasklist={todolist} />
+      <TodosList tasklist={todolist} deleteTask={deleteTask} />
     </section>
   ) 
 }

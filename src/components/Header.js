@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const Header = ({ title, subtitle }) => (
+const Header = () => (
   <section id="header">
-    <h1>{ title }</h1>
-    <h2>{ subtitle }</h2>
+    <h1>Todos</h1>
+    <h2>Items will persist in the browser local storage</h2>
   </section>
 );
 
